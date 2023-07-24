@@ -7,9 +7,9 @@ class Tsp:
     d: np.ndarray
     model: BinaryPoly
 
-    def __init__(self, n_city: int):
+    def __init__(self, n_city: int, d: np.ndarray):
         self.n_city: int = n_city
-        self.d: np.ndarray = np.ones((n_city, n_city))
+        self.d: np.ndarray = d
 
     def create_model(self, alpha: int):
         gen = BinarySymbolGenerator()
