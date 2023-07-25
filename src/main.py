@@ -1,10 +1,12 @@
 import os
+import sys
 
 import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
 
 from domain.model.tsp import Tsp
+from domain.plotter.result_plotter import ResultPlotter
 from domain.sampler.amplify_ae import AmplifyAe
 from usecase.tsp_optimize import TspOptimize
 
@@ -13,11 +15,14 @@ env_path = os.path.join(os.path.dirname(__file__), '../.env')
 load_dotenv(env_path)
 TOKEN = os.environ.get("AMPLIFYAE_TOKEN")
 
+args = sys.argv
+
 # 座標データの読み込み，距離行列計算
-with open("../lib/att48.tsp", "r") as f:
+datafile_path = '../lib/ALL_tsp/'+args[1]+'.tsp'
+with open(datafile_path, "r") as f:
 	lines = f.read().splitlines()
 n_city = int(lines[3].split(' : ')[1])
-data = pd.read_csv('../lib/att48.tsp', header=5)
+data = pd.read_csv(datafile_path, header=5)
 df = data['NODE_COORD_SECTION'].str.split(' ', expand=True)
 df = df.drop(df.columns[0], axis=1).drop(df.index[-1])
 points = df.astype(int).to_numpy()
@@ -38,6 +43,8 @@ opt = TspOptimize(model=model, solver=solver)
 opt.optimize()
 result = opt.get_result()
 energy, values = result[0].energy, result[0].values
+print(f'energy={energy}')
+route = tsp.get_route(values=values)
 
-print(energy)
-# print(values)
+plotter = ResultPlotter(route=route, distances=distances, points=points)
+plotter.show(is_saved=True)
