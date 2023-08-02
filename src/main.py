@@ -18,7 +18,7 @@ TOKEN = os.environ.get("AMPLIFYAE_TOKEN")
 args = sys.argv
 
 # 座標データの読み込み，距離行列計算
-datafile_path = '../lib/ALL_tsp/'+args[1]+'.tsp'
+datafile_path = os.path.join(os.path.dirname(__file__), '../lib/ALL_tsp/'+args[1]+'.tsp')
 with open(datafile_path, "r") as f:
 	lines = f.read().splitlines()
 n_city = int(lines[3].split(' : ')[1])
@@ -46,5 +46,6 @@ energy, values = result[0].energy, result[0].values
 print(f'energy={energy}')
 route = tsp.get_route(values=values)
 
+file_path = os.path.join(os.path.dirname(__file__), '../results/img.pdf')
 plotter = ResultPlotter(route=route, distances=distances, points=points)
-plotter.show(is_saved=True)
+plotter.show(is_saved=True, file_path=file_path)
