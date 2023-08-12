@@ -49,5 +49,20 @@ pdm solve att48
 ```
 
 
+### docker
+```bash
+docker compose build
+```
+
+```bash
+docker compose up
+```
+
+```bash
+docker exec -it tsp-docker bash
+pdm solve att48
+```
+
+
 ## Author
 Tatsuya Noguchi ([@tatsuya-1412](https://github.com/tatsuya-1412))

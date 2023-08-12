@@ -1,0 +1,9 @@
+###### Requirements without Version Specifiers ######`
+jupyterlab
+amplify
+matplotlib
+pyqubo
+pandas
+geopy
+dimod
+pathlib
