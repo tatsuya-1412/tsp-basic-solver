@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python:
+    container_name: tsp-docker
+    platform: linux/amd64
+    build:
+      context: .
+    tty: true

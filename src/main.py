@@ -8,12 +8,14 @@ from dotenv import load_dotenv
 from domain.model.tsp import Tsp
 from domain.plotter.result_plotter import ResultPlotter
 from domain.sampler.amplify_ae import AmplifyAe
+from domain.sampler.dwave_advantage import DwaveAdvantage
 from usecase.tsp_optimize import TspOptimize
 
 # 環境変数の読み込み
 env_path = os.path.join(os.path.dirname(__file__), '../.env')
 load_dotenv(env_path)
-TOKEN = os.environ.get("AMPLIFYAE_TOKEN")
+AMPLIFYAE_TOKEN = os.environ.get("AMPLIFYAE_TOKEN")
+DWAVEADVANTAGE_TOKEN = os.environ.get("DWAVEADVANTAGE_TOKEN")
 
 args = sys.argv
 
@@ -35,17 +37,31 @@ tsp.create_model(alpha=np.amax(distances))
 model = tsp.get_model()
 
 # ソルバーの取得
-ae = AmplifyAe(token=TOKEN)
-solver = ae.get_solver()
+ae = AmplifyAe(token=AMPLIFYAE_TOKEN)
+solver_ae = ae.get_solver()
+ad = DwaveAdvantage(token=DWAVEADVANTAGE_TOKEN)
+solver_ad = ad.get_solver()
 
 # 最適化
-opt = TspOptimize(model=model, solver=solver)
-opt.optimize()
-result = opt.get_result()
+opt_ae = TspOptimize(model=model, solver=solver_ae)
+opt_ae.optimize()
+result = opt_ae.get_result()
 energy, values = result[0].energy, result[0].values
 print(f'energy={energy}')
 route = tsp.get_route(values=values)
 
-file_path = os.path.join(os.path.dirname(__file__), '../results/img.pdf')
+file_path = os.path.join(os.path.dirname(__file__), '../results/img_ae.pdf')
+plotter = ResultPlotter(route=route, distances=distances, points=points)
+plotter.show(is_saved=True, file_path=file_path)
+
+# 最適化
+opt_ad = TspOptimize(model=model, solver=solver_ad)
+opt_ad.optimize()
+result = opt_ad.get_result()
+energy, values = result[0].energy, result[0].values
+print(f'energy={energy}')
+route = tsp.get_route(values=values)
+
+file_path = os.path.join(os.path.dirname(__file__), '../results/img_ad.pdf')
 plotter = ResultPlotter(route=route, distances=distances, points=points)
 plotter.show(is_saved=True, file_path=file_path)

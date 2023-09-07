@@ -6,7 +6,7 @@ groups = ["default"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:496ff02d1f6e0c09e10e49d8070444db057ef7531a44d62198bfc5053549136e"
+content_hash = "sha256:86def9f7dff1d8c67e6086a596ed7f9d93cd58f7d6e2f30f20eef4d6adae47a8"
 
 [[package]]
 name = "amplify"
@@ -31,6 +31,64 @@ files = [
     {file = "amplify-0.11.2-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:897a2e76e715f6a7897c3197f2675de16fe77bf79709bab38f85590509bff239"},
     {file = "amplify-0.11.2-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:c186b031b1371a5cbe60d5837dd25a741aa2ed980f492ad89c4266a94178e118"},
     {file = "amplify-0.11.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e918eb911eb0adec374d59d342bed5df5730fdcf68b62b310155a11e1da7ae59"},
+]
+
+[[package]]
+name = "certifi"
+version = "2023.7.22"
+requires_python = ">=3.6"
+summary = "Python package for providing Mozilla's CA Bundle."
+files = [
+    {file = "certifi-2023.7.22-py3-none-any.whl", hash = "sha256:92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"},
+    {file = "certifi-2023.7.22.tar.gz", hash = "sha256:539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082"},
+]
+
+[[package]]
+name = "charset-normalizer"
+version = "3.2.0"
+requires_python = ">=3.7.0"
+summary = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
+files = [
+    {file = "charset-normalizer-3.2.0.tar.gz", hash = "sha256:3bb3d25a8e6c0aedd251753a79ae98a093c7e7b471faa3aa9a93a81431987ace"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:4957669ef390f0e6719db3613ab3a7631e68424604a7b448f079bee145da6e09"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:46fb8c61d794b78ec7134a715a3e564aafc8f6b5e338417cb19fe9f57a5a9bf2"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:f779d3ad205f108d14e99bb3859aa7dd8e9c68874617c72354d7ecaec2a054ac"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f25c229a6ba38a35ae6e25ca1264621cc25d4d38dca2942a7fce0b67a4efe918"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:2efb1bd13885392adfda4614c33d3b68dee4921fd0ac1d3988f8cbb7d589e72a"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:1f30b48dd7fa1474554b0b0f3fdfdd4c13b5c737a3c6284d3cdc424ec0ffff3a"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:246de67b99b6851627d945db38147d1b209a899311b1305dd84916f2b88526c6"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:9bd9b3b31adcb054116447ea22caa61a285d92e94d710aa5ec97992ff5eb7cf3"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:8c2f5e83493748286002f9369f3e6607c565a6a90425a3a1fef5ae32a36d749d"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:3170c9399da12c9dc66366e9d14da8bf7147e1e9d9ea566067bbce7bb74bd9c2"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-musllinux_1_1_ppc64le.whl", hash = "sha256:7a4826ad2bd6b07ca615c74ab91f32f6c96d08f6fcc3902ceeedaec8cdc3bcd6"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-musllinux_1_1_s390x.whl", hash = "sha256:3b1613dd5aee995ec6d4c69f00378bbd07614702a315a2cf6c1d21461fe17c23"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:9e608aafdb55eb9f255034709e20d5a83b6d60c054df0802fa9c9883d0a937aa"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-win32.whl", hash = "sha256:f2a1d0fd4242bd8643ce6f98927cf9c04540af6efa92323e9d3124f57727bfc1"},
+    {file = "charset_normalizer-3.2.0-cp311-cp311-win_amd64.whl", hash = "sha256:681eb3d7e02e3c3655d1b16059fbfb605ac464c834a0c629048a30fad2b27489"},
+    {file = "charset_normalizer-3.2.0-py3-none-any.whl", hash = "sha256:8e098148dd37b4ce3baca71fb394c81dc5d9c7728c95df695d2dca218edf40e6"},
+]
+
+[[package]]
+name = "click"
+version = "8.1.6"
+requires_python = ">=3.7"
+summary = "Composable command line interface toolkit"
+dependencies = [
+    "colorama; platform_system == \"Windows\"",
+]
+files = [
+    {file = "click-8.1.6-py3-none-any.whl", hash = "sha256:fa244bb30b3b5ee2cae3da8f55c9e5e0c0e86093306301fb418eb9dc40fbded5"},
+    {file = "click-8.1.6.tar.gz", hash = "sha256:48ee849951919527a045bfe3bf7baa8a959c423134e1a5b98c05c20ba75a1cbd"},
+]
+
+[[package]]
+name = "colorama"
+version = "0.4.6"
+requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+summary = "Cross-platform colored terminal text."
+files = [
+    {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
+    {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
 
 [[package]]
@@ -94,6 +152,138 @@ files = [
 ]
 
 [[package]]
+name = "dimod"
+version = "0.12.10"
+requires_python = ">=3.8"
+summary = "A shared API for binary quadratic model samplers."
+dependencies = [
+    "numpy<2.0.0,>=1.17.3",
+]
+files = [
+    {file = "dimod-0.12.10-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:55c8075a5eb65e8b31f8957c6dae226c20c1f1622a4ebb0e21ec43909e383a60"},
+    {file = "dimod-0.12.10-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:b03f6a17de7b7beecb3a44c54dcdcb0b7ad2b9488dd96ace0e94350d920d24b6"},
+    {file = "dimod-0.12.10-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9cfee1ee6b178c984430711095433d85d823228e32c9da53e52c13d18a6aa3da"},
+    {file = "dimod-0.12.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:66b0e6f300cb1a490994424c642aeb0f89b8b4d44b1da1ea661519e339473911"},
+    {file = "dimod-0.12.10-cp311-cp311-win_amd64.whl", hash = "sha256:0839540ffb5218da06ba1f417615e8fc51dd6197d23b724e109b5dfab26947d5"},
+    {file = "dimod-0.12.10.tar.gz", hash = "sha256:006787e8d3f95409998e0fc8df94a8f932570bb5c59dc678d503dc7024934da9"},
+]
+
+[[package]]
+name = "diskcache"
+version = "5.6.1"
+requires_python = ">=3"
+summary = "Disk Cache -- Disk and file backed persistent cache."
+files = [
+    {file = "diskcache-5.6.1-py3-none-any.whl", hash = "sha256:558c6a2d5d7c721bb00e40711803d6804850c9f76c426ed81ecc627fe9d2ce2d"},
+    {file = "diskcache-5.6.1.tar.gz", hash = "sha256:e4c978532feff5814c4cc00fe1e11e40501985946643d73220d41ee7737c72c3"},
+]
+
+[[package]]
+name = "dwave-cloud-client"
+version = "0.10.6"
+requires_python = ">=3.7"
+summary = "A minimal client for interacting with D-Wave cloud resources."
+dependencies = [
+    "click>=7.0",
+    "diskcache>=5.2.1",
+    "homebase>=1.0",
+    "packaging>=19",
+    "plucky>=0.4.3",
+    "pydantic<2,>=1.7.3",
+    "python-dateutil>=2.7",
+    "requests[socks]>=2.18",
+    "werkzeug>=2.2",
+]
+files = [
+    {file = "dwave-cloud-client-0.10.6.tar.gz", hash = "sha256:ed321c8bfe42b7833b9b30916fbb5d0b817476281c24fd93ad9d515262231de4"},
+    {file = "dwave_cloud_client-0.10.6-py3-none-any.whl", hash = "sha256:86265c8fa525b7474b6e25322b709fbdd7149f2f236a433871324705a5ac951f"},
+]
+
+[[package]]
+name = "dwave-networkx"
+version = "0.8.14"
+requires_python = ">=3.7"
+summary = "A NetworkX extension providing graphs and algorithms relevent to working with the D-Wave System"
+dependencies = [
+    "dimod>=0.10.8",
+    "networkx>=2.4",
+    "numpy>=1.17.3",
+]
+files = [
+    {file = "dwave_networkx-0.8.14-py3-none-any.whl", hash = "sha256:a1b652c2d512bf6f8dfce4634000e7387d6f8fd9dd7716102b1cdbc0412cdb7d"},
+    {file = "dwave_networkx-0.8.14.tar.gz", hash = "sha256:03f255192cbb0e3472fdf3cd70b8b6f58d4d71d4b0aeb04746ee4ece9a771318"},
+]
+
+[[package]]
+name = "dwave-preprocessing"
+version = "0.6.3"
+requires_python = ">=3.8"
+summary = "An API for preprocessing tools"
+dependencies = [
+    "dimod<0.13.0,>=0.12.6",
+    "numpy<2.0.0,>=1.17.3",
+]
+files = [
+    {file = "dwave-preprocessing-0.6.3.tar.gz", hash = "sha256:2076ac0cbe0c9de4fbd277d45602bb6693dd293851f2117ee5dd8d09f1738be1"},
+    {file = "dwave_preprocessing-0.6.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:e03cae511b38af73bf723323c356fe24180ce85ab8d4100c434af169f37e93a0"},
+    {file = "dwave_preprocessing-0.6.3-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:c69f3c58d5d5ff8bc88242d5c6ca6583cf8696a21fc2205abfb316c66e049c83"},
+    {file = "dwave_preprocessing-0.6.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4df62831a188f83e566291ebd6c728894b01cfc384bfb121e1c9f76c88d98bdf"},
+    {file = "dwave_preprocessing-0.6.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e2980481df62953865e802a87fd83a9c9597a5aa0fcac6bc98f6f77567032a54"},
+    {file = "dwave_preprocessing-0.6.3-cp311-cp311-win_amd64.whl", hash = "sha256:ed1f4bfaeada01d97dacf454ef21f36cadeb0e8fcc1e1a8c943acc3586e52cf0"},
+]
+
+[[package]]
+name = "dwave-samplers"
+version = "1.1.0"
+requires_python = ">=3.7"
+summary = "Ocean-compatible collection of solvers/samplers"
+dependencies = [
+    "dimod<0.13.0,>=0.12.0",
+    "networkx>=2.4.0",
+    "numpy<2.0.0,>=1.19.0",
+]
+files = [
+    {file = "dwave-samplers-1.1.0.tar.gz", hash = "sha256:9c27c85f97e08d4e7bfd87eca27a86b0595ea85feffc5bce09a0cae097345d3d"},
+    {file = "dwave_samplers-1.1.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:c3b5bf103df469486fdea527c0b6289a59f1c1ff9daea0fe014e429a68ff9f11"},
+    {file = "dwave_samplers-1.1.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:7c5dcaaa30204b7a7aaa869187a9354e0a7d8aa4d74b41c646f900e147c2b245"},
+    {file = "dwave_samplers-1.1.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4c21b5c6844be773b43a332612206f2cfb46d9b423df92318ed784fea4be931c"},
+    {file = "dwave_samplers-1.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0916858cbd88af007b0537c67b02a528d5fc0669866acf9e9d149b0c4f0e6711"},
+    {file = "dwave_samplers-1.1.0-cp311-cp311-win_amd64.whl", hash = "sha256:5546b55be0e8ffb19fd6d642c1c057fa72ac43a8e96d217044b542471ea07f4a"},
+]
+
+[[package]]
+name = "dwave-system"
+version = "1.20.0"
+requires_python = ">=3.7"
+summary = "All things D-Wave System."
+dependencies = [
+    "dimod<0.14.0,>=0.12.7",
+    "dwave-cloud-client<0.11.0,>=0.9.1",
+    "dwave-networkx>=0.8.10",
+    "dwave-preprocessing>=0.5.0",
+    "dwave-samplers>=1.0.0",
+    "homebase<2.0.0,>=1.0.0",
+    "minorminer<0.3.0,>=0.2.8",
+    "networkx<3.0,>=2.0",
+    "numpy>=1.20.0",
+    "scipy>=1.7.3",
+]
+files = [
+    {file = "dwave-system-1.20.0.tar.gz", hash = "sha256:1d517688995e5c5d0f98bb684a3fbcb9e04e3c219ce68712cb51ba6fd7ced975"},
+    {file = "dwave_system-1.20.0-py3-none-any.whl", hash = "sha256:8b7ba682d65ca2ed7779e4cfe4cc26fff7f0476345cb17549a9fe5086b40af12"},
+]
+
+[[package]]
+name = "fasteners"
+version = "0.18"
+requires_python = ">=3.6"
+summary = "A python package that provides useful locks"
+files = [
+    {file = "fasteners-0.18-py3-none-any.whl", hash = "sha256:1d4caf5f8db57b0e4107d94fd5a1d02510a450dced6ca77d1839064c1bacf20c"},
+    {file = "fasteners-0.18.tar.gz", hash = "sha256:cb7c13ef91e0c7e4fe4af38ecaf6b904ec3f5ce0dda06d34924b6b74b869d953"},
+]
+
+[[package]]
 name = "fonttools"
 version = "4.41.1"
 requires_python = ">=3.8"
@@ -133,6 +323,25 @@ files = [
     {file = "fonttools-4.41.1-cp39-cp39-win_amd64.whl", hash = "sha256:1df1b6f4c7c4bc8201eb47f3b268adbf2539943aa43c400f84556557e3e109c0"},
     {file = "fonttools-4.41.1-py3-none-any.whl", hash = "sha256:952cb405f78734cf6466252fec42e206450d1a6715746013f64df9cbd4f896fa"},
     {file = "fonttools-4.41.1.tar.gz", hash = "sha256:e16a9449f21a93909c5be2f5ed5246420f2316e94195dbfccb5238aaa38f9751"},
+]
+
+[[package]]
+name = "homebase"
+version = "1.0.1"
+summary = "A platform independent API for paths in which applications can write data."
+files = [
+    {file = "homebase-1.0.1-py2.py3-none-any.whl", hash = "sha256:d64c97f60a8ddd94ce8702bac65ed5d1996aca01a17d1e53e6ad5149e2f8b5b5"},
+    {file = "homebase-1.0.1.tar.gz", hash = "sha256:9ee008df4298b420852d815e6df488822229c4bd8d571bcd0a454e04232c635e"},
+]
+
+[[package]]
+name = "idna"
+version = "3.4"
+requires_python = ">=3.5"
+summary = "Internationalized Domain Names in Applications (IDNA)"
+files = [
+    {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
+    {file = "idna-3.4.tar.gz", hash = "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"},
 ]
 
 [[package]]
@@ -212,6 +421,25 @@ files = [
 ]
 
 [[package]]
+name = "markupsafe"
+version = "2.1.3"
+requires_python = ">=3.7"
+summary = "Safely add untrusted strings to HTML/XML markup."
+files = [
+    {file = "MarkupSafe-2.1.3-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:ad9e82fb8f09ade1c3e1b996a6337afac2b8b9e365f926f5a61aacc71adc5b3c"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:3c0fae6c3be832a0a0473ac912810b2877c8cb9d76ca48de1ed31e1c68386575"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b076b6226fb84157e3f7c971a47ff3a679d837cf338547532ab866c57930dbee"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bfce63a9e7834b12b87c64d6b155fdd9b3b96191b6bd334bf37db7ff1fe457f2"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:338ae27d6b8745585f87218a3f23f1512dbf52c26c28e322dbe54bcede54ccb9"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:e4dd52d80b8c83fdce44e12478ad2e85c64ea965e75d66dbeafb0a3e77308fcc"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:df0be2b576a7abbf737b1575f048c23fb1d769f267ec4358296f31c2479db8f9"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:5bbe06f8eeafd38e5d0a4894ffec89378b6c6a625ff57e3028921f8ff59318ac"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-win32.whl", hash = "sha256:dd15ff04ffd7e05ffcb7fe79f1b98041b8ea30ae9234aed2a9168b5797c3effb"},
+    {file = "MarkupSafe-2.1.3-cp311-cp311-win_amd64.whl", hash = "sha256:134da1eca9ec0ae528110ccc9e48041e0828d79f24121a1a146161103c76e686"},
+    {file = "MarkupSafe-2.1.3.tar.gz", hash = "sha256:af598ed32d6ae86f1b747b82783958b1a4ab8f617b06fe68795c7f026abbdcad"},
+]
+
+[[package]]
 name = "matplotlib"
 version = "3.7.2"
 requires_python = ">=3.8"
@@ -269,6 +497,39 @@ files = [
     {file = "matplotlib-3.7.2-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:717157e61b3a71d3d26ad4e1770dc85156c9af435659a25ee6407dc866cb258d"},
     {file = "matplotlib-3.7.2-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:20f844d6be031948148ba49605c8b96dfe7d3711d1b63592830d650622458c11"},
     {file = "matplotlib-3.7.2.tar.gz", hash = "sha256:a8cdb91dddb04436bd2f098b8fdf4b81352e68cf4d2c6756fcc414791076569b"},
+]
+
+[[package]]
+name = "minorminer"
+version = "0.2.11"
+requires_python = ">=3.7"
+summary = "heuristic algorithm to find graph minor embeddings"
+dependencies = [
+    "dwave-networkx>=0.8.10",
+    "fasteners",
+    "homebase",
+    "networkx",
+    "numpy",
+    "rectangle-packer>=2.0.1",
+    "scipy",
+]
+files = [
+    {file = "minorminer-0.2.11-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:7aee793c72879abfdeb4d2c99f0a7fd720ee59570ae5551884ebbc93688c1c49"},
+    {file = "minorminer-0.2.11-cp311-cp311-macosx_11_0_x86_64.whl", hash = "sha256:d04c857d054a6ca8dfd83a2c89fe7284f4e6fdaba541045614f9ba575e3613c3"},
+    {file = "minorminer-0.2.11-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:978c5be3a03bf0e79e4f6649482d811f6413f9ec78fc42c521b7e8eba8641b3a"},
+    {file = "minorminer-0.2.11-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cfad0f7a381f35cf4a4e833eae8a4482163fd4721de6d03460a98c018fd63949"},
+    {file = "minorminer-0.2.11-cp311-cp311-win_amd64.whl", hash = "sha256:b8e470c6c9fc7ae3e32098ee763099a6c043111edd9d4c1d8e12c0a47d2708fd"},
+    {file = "minorminer-0.2.11.tar.gz", hash = "sha256:f8b61def980fa3e500cb13ad1b37cac8615f5e1551de513e93f0574ea4850722"},
+]
+
+[[package]]
+name = "networkx"
+version = "2.8.8"
+requires_python = ">=3.8"
+summary = "Python package for creating and manipulating graphs and networks"
+files = [
+    {file = "networkx-2.8.8-py3-none-any.whl", hash = "sha256:e435dfa75b1d7195c7b8378c3859f0445cd88c6b0375c181ed66823a9ceb7524"},
+    {file = "networkx-2.8.8.tar.gz", hash = "sha256:230d388117af870fce5647a3c52401fcf753e94720e6ea6b4197a5355648885e"},
 ]
 
 [[package]]
@@ -419,6 +680,35 @@ files = [
 ]
 
 [[package]]
+name = "plucky"
+version = "0.4.3"
+summary = "Plucking (deep) keys/paths safely from python collections has never been easier."
+files = [
+    {file = "plucky-0.4.3-py2.py3-none-any.whl", hash = "sha256:a358878f3e45b5e51d0b4e5b5c89d704422a72c2cf8ee9aaf9acedfa53f89105"},
+    {file = "plucky-0.4.3.tar.gz", hash = "sha256:5bc75d43ae6b40f1b7ba42000b37e4934fa6bd2d6a6cd4e47461f803a404c194"},
+]
+
+[[package]]
+name = "pydantic"
+version = "1.10.12"
+requires_python = ">=3.7"
+summary = "Data validation and settings management using python type hints"
+dependencies = [
+    "typing-extensions>=4.2.0",
+]
+files = [
+    {file = "pydantic-1.10.12-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:b0d191db0f92dfcb1dec210ca244fdae5cbe918c6050b342d619c09d31eea0cc"},
+    {file = "pydantic-1.10.12-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:795e34e6cc065f8f498c89b894a3c6da294a936ee71e644e4bd44de048af1405"},
+    {file = "pydantic-1.10.12-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:69328e15cfda2c392da4e713443c7dbffa1505bc9d566e71e55abe14c97ddc62"},
+    {file = "pydantic-1.10.12-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2031de0967c279df0d8a1c72b4ffc411ecd06bac607a212892757db7462fc494"},
+    {file = "pydantic-1.10.12-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:ba5b2e6fe6ca2b7e013398bc7d7b170e21cce322d266ffcd57cca313e54fb246"},
+    {file = "pydantic-1.10.12-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:2a7bac939fa326db1ab741c9d7f44c565a1d1e80908b3797f7f81a4f86bc8d33"},
+    {file = "pydantic-1.10.12-cp311-cp311-win_amd64.whl", hash = "sha256:87afda5539d5140cb8ba9e8b8c8865cb5b1463924d38490d73d3ccfd80896b3f"},
+    {file = "pydantic-1.10.12-py3-none-any.whl", hash = "sha256:b749a43aa51e32839c9d71dc67eb1e4221bb04af1033a32e3923d46f9effa942"},
+    {file = "pydantic-1.10.12.tar.gz", hash = "sha256:0fe8a415cea8f340e7a9af9c54fc71a649b43e8ca3cc732986116b3cb135d303"},
+]
+
+[[package]]
 name = "pyparsing"
 version = "3.0.9"
 requires_python = ">=3.6.8"
@@ -426,6 +716,16 @@ summary = "pyparsing module - Classes and methods to define and execute parsing 
 files = [
     {file = "pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
     {file = "pyparsing-3.0.9.tar.gz", hash = "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"},
+]
+
+[[package]]
+name = "pysocks"
+version = "1.7.1"
+requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+summary = "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
+files = [
+    {file = "PySocks-1.7.1-py3-none-any.whl", hash = "sha256:2725bd0a9925919b9b51739eea5f9e2bae91e83288108a9ad338b2e3a4435ee5"},
+    {file = "PySocks-1.7.1.tar.gz", hash = "sha256:3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0"},
 ]
 
 [[package]]
@@ -461,6 +761,94 @@ files = [
 ]
 
 [[package]]
+name = "rectangle-packer"
+version = "2.0.1"
+summary = "Pack a set of rectangles into a bounding box with minimum area"
+files = [
+    {file = "rectangle-packer-2.0.1.tar.gz", hash = "sha256:dd8e70184d2af8a195d568e0c2c3cc197f0c94c2a477475411e5ea978c67b27d"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:88550b3e184c50cb71f365678557e947de2e6a43f1e749efdd31f441da547b49"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7c62ccc5548d775e05ec69c2685cafca1659e5a79c0f5ba11e959c8de1892d51"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:c379762ca63f54feb91396f91d5f8cb6272f864edc757d7b0ee764bda546713f"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:6c67fde02358abf7f5ce01fb7d824aca2e67a2b0cc14d7a0727cffe3fdd469d9"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:c6c0407fa10fbf5792ddf73c3b2bcde61a37994f6e393d7e6dcd1959b33448f9"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0dc809fb887093baadbbe5c0be5586d84a211530ebe6692a9814b8a3a1488401"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:e7ca5e4427cf6f20103c7ecf7c187bf4bca8731441afce93894327efaaec1a2b"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:c2168f40b273f03dee234755cc0421113de1c21bc0d5d841944598d859827153"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-musllinux_1_1_ppc64le.whl", hash = "sha256:ce7894ac2073d382aad616cb94f2234610ec9adcec0db8108e5c9a09969559ae"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-musllinux_1_1_s390x.whl", hash = "sha256:1192e8391a171407d8122ca2cd3d5432b2f9c239a5cd56d200879ba92de295e2"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:dd368b344e06c648678383058f6a6f82c74fbb30fe896292c91583c7ccd90034"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-win32.whl", hash = "sha256:6ca3a883b0433dba7b621a6f202e13ed911ca180deaef6dd5f7ac35d6171fbf1"},
+    {file = "rectangle_packer-2.0.1-cp311-cp311-win_amd64.whl", hash = "sha256:586c47652a78015b086c3feb5b027662efc3144219fbe606b0fc2794177ceb03"},
+    {file = "rectangle_packer-2.0.1-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b346d05be3653754761d86c03b74722f52ebb4afe21db3f401b44a781ef4e21b"},
+    {file = "rectangle_packer-2.0.1-pp37-pypy37_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:1c23f6d8d34b725047d35452cedf331cb56b73de01b477fbca147a462e8ade6e"},
+    {file = "rectangle_packer-2.0.1-pp37-pypy37_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4508f4fff523bad18db308513d0fc7d258bdb3b2b098391076677b039bdacf6e"},
+    {file = "rectangle_packer-2.0.1-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:35c6b0f31f7007516bbbec550c929f1ecca6d7fda3d1d668d22f26c041fb984a"},
+    {file = "rectangle_packer-2.0.1-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:646dda8f9374cce6049d8721425999088a0322c2bd96172688de12e9c2999738"},
+    {file = "rectangle_packer-2.0.1-pp38-pypy38_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:378750b047e00b6c24e2604fbf13fd85863055df880d48d18e23d1e9246c0b1b"},
+    {file = "rectangle_packer-2.0.1-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8dbf590d9776a70558ab96883d0cafad535228e28c038abfbc8b656f710808ce"},
+    {file = "rectangle_packer-2.0.1-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b7cf125db85159d35f6231f869fe1b72c6fe8c5abc370234cdc2ff34f10adc7b"},
+    {file = "rectangle_packer-2.0.1-pp39-pypy39_pp73-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:13f8ad74bd3bc0fc5fdf278cbd476fc2b52efe3954b7db4703d9c0106d8ad010"},
+]
+
+[[package]]
+name = "requests"
+version = "2.31.0"
+requires_python = ">=3.7"
+summary = "Python HTTP for Humans."
+dependencies = [
+    "certifi>=2017.4.17",
+    "charset-normalizer<4,>=2",
+    "idna<4,>=2.5",
+    "urllib3<3,>=1.21.1",
+]
+files = [
+    {file = "requests-2.31.0-py3-none-any.whl", hash = "sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"},
+    {file = "requests-2.31.0.tar.gz", hash = "sha256:942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"},
+]
+
+[[package]]
+name = "requests"
+version = "2.31.0"
+extras = ["socks"]
+requires_python = ">=3.7"
+summary = "Python HTTP for Humans."
+dependencies = [
+    "PySocks!=1.5.7,>=1.5.6",
+    "requests==2.31.0",
+]
+files = [
+    {file = "requests-2.31.0-py3-none-any.whl", hash = "sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"},
+    {file = "requests-2.31.0.tar.gz", hash = "sha256:942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"},
+]
+
+[[package]]
+name = "scipy"
+version = "1.9.3"
+requires_python = ">=3.8"
+summary = "Fundamental algorithms for scientific computing in Python"
+dependencies = [
+    "numpy<1.26.0,>=1.18.5",
+]
+files = [
+    {file = "scipy-1.9.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:b41bc822679ad1c9a5f023bc93f6d0543129ca0f37c1ce294dd9d386f0a21096"},
+    {file = "scipy-1.9.3-cp311-cp311-macosx_12_0_arm64.whl", hash = "sha256:90453d2b93ea82a9f434e4e1cba043e779ff67b92f7a0e85d05d286a3625df3c"},
+    {file = "scipy-1.9.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:83c06e62a390a9167da60bedd4575a14c1f58ca9dfde59830fc42e5197283dab"},
+    {file = "scipy-1.9.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:abaf921531b5aeaafced90157db505e10345e45038c39e5d9b6c7922d68085cb"},
+    {file = "scipy-1.9.3-cp311-cp311-win_amd64.whl", hash = "sha256:06d2e1b4c491dc7d8eacea139a1b0b295f74e1a1a0f704c375028f8320d16e31"},
+    {file = "scipy-1.9.3.tar.gz", hash = "sha256:fbc5c05c85c1a02be77b1ff591087c83bc44579c6d2bd9fb798bb64ea5e1a027"},
+]
+
+[[package]]
+name = "setuptools"
+version = "68.0.0"
+requires_python = ">=3.7"
+summary = "Easily download, build, install, upgrade, and uninstall Python packages"
+files = [
+    {file = "setuptools-68.0.0-py3-none-any.whl", hash = "sha256:11e52c67415a381d10d6b462ced9cfb97066179f0e871399e006c4ab101fc85f"},
+    {file = "setuptools-68.0.0.tar.gz", hash = "sha256:baf1fdb41c6da4cd2eae722e135500da913332ab3f2f5c7d33af9b492acb5235"},
+]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
@@ -471,6 +859,16 @@ files = [
 ]
 
 [[package]]
+name = "typing-extensions"
+version = "4.7.1"
+requires_python = ">=3.7"
+summary = "Backported and Experimental Type Hints for Python 3.7+"
+files = [
+    {file = "typing_extensions-4.7.1-py3-none-any.whl", hash = "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36"},
+    {file = "typing_extensions-4.7.1.tar.gz", hash = "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"},
+]
+
+[[package]]
 name = "tzdata"
 version = "2023.3"
 requires_python = ">=2"
@@ -478,4 +876,27 @@ summary = "Provider of IANA time zone data"
 files = [
     {file = "tzdata-2023.3-py2.py3-none-any.whl", hash = "sha256:7e65763eef3120314099b6939b5546db7adce1e7d6f2e179e3df563c70511eda"},
     {file = "tzdata-2023.3.tar.gz", hash = "sha256:11ef1e08e54acb0d4f95bdb1be05da659673de4acbd21bf9c69e94cc5e907a3a"},
+]
+
+[[package]]
+name = "urllib3"
+version = "2.0.4"
+requires_python = ">=3.7"
+summary = "HTTP library with thread-safe connection pooling, file post, and more."
+files = [
+    {file = "urllib3-2.0.4-py3-none-any.whl", hash = "sha256:de7df1803967d2c2a98e4b11bb7d6bd9210474c46e8a0401514e3a42a75ebde4"},
+    {file = "urllib3-2.0.4.tar.gz", hash = "sha256:8d22f86aae8ef5e410d4f539fde9ce6b2113a001bb4d189e0aed70642d602b11"},
+]
+
+[[package]]
+name = "werkzeug"
+version = "2.3.6"
+requires_python = ">=3.8"
+summary = "The comprehensive WSGI web application library."
+dependencies = [
+    "MarkupSafe>=2.1.1",
+]
+files = [
+    {file = "Werkzeug-2.3.6-py3-none-any.whl", hash = "sha256:935539fa1413afbb9195b24880778422ed620c0fc09670945185cce4d91a8890"},
+    {file = "Werkzeug-2.3.6.tar.gz", hash = "sha256:98c774df2f91b05550078891dee5f0eb0cb797a522c757a2452b9cee5b202330"},
 ]
