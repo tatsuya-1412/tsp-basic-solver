@@ -16,9 +16,6 @@ RUN pip install --no-cache-dir -U pip setuptools wheel \
 WORKDIR /project
 
 COPY pyproject.toml pdm.lock README.md .env ./
-COPY src src
-COPY lib lib
-COPY results results
 
 RUN mkdir __pypackages__ \
   && pdm install --no-lock --no-editable --prod
