@@ -5,4 +5,8 @@ services:
     platform: linux/amd64
     build:
       context: .
+    volumes:
+      - ./src:/project/src
+      - ./lib:/project/lib
+      - ./results:/project/results
     tty: true
